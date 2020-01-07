@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CAT_Task1</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
+    <string name="deleted">Deleted</string>
+    <string name="notes_app">Notes App</string>
+    <string name="delete_all_users">Delete all users</string>
+    <string name="about_me">About me</string>
+    <string name="dummy_user">Dummy user</string>
+    <string name="insert_title">Insert a title</string>
+    <string name="updated">Updated</string>
+    <string name="update">Update</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rightMenuView="@id/delete_user"
+    app:leftMenuView="@id/update"
+    app:contentView="@id/content" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:background="?selectableItemBackground"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/user_id"
+            android:background="@drawable/circle_shape"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="6dp"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_notepad_splash" />
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Title"
+            app:layout_constraintBottom_toTopOf="@+id/user_description"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="136dp" />
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            android:id="@+id/user_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_title"
+            tools:layout_editor_absoluteX="136dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="75dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:background="@color/colorRed"
+        android:orientation="vertical"
+        android:layout_width="80dp"
+        android:padding="8dp"
+        android:id="@+id/delete_user"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:tint="@color/colorBlueBold"
+            android:layout_width="@dimen/dim_20dp"
+            android:layout_height="@dimen/dim_20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_trash_solid" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@color/colorGold"
+        android:orientation="vertical"
+        android:layout_width="80dp"
+        android:padding="6dp"
+        android:id="@+id/update"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="@dimen/dim_20dp"
+            android:layout_height="@dimen/dim_20dp"
+            android:layout_gravity="center"
+            android:tint="@color/colorBlueBold"
+            android:src="@drawable/ic_edit_solid"
+            />
+
+    </FrameLayout>
+</com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>

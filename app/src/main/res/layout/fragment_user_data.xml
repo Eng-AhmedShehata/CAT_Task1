@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05"
+        android:id="@+id/guide_line_start"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="12dp"
+        android:id="@+id/user_data_fragment_et_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_end"
+        app:layout_constraintStart_toEndOf="@id/guide_line_start"
+        style="@style/TextInputLayout"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/ETTheme"
+            android:hint="@string/title"
+            android:focusable="true"
+            android:inputType="text" />
+        <requestFocus />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user_data_fragment_et_description"
+        app:layout_constraintTop_toBottomOf="@id/user_data_fragment_et_title"
+        app:layout_constraintStart_toEndOf="@id/guide_line_start"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_end"
+        style="@style/TextInputLayout"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/ETTheme"
+            android:hint="@string/description"
+            android:gravity="top"
+            android:lines="5"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/user_data_fragment_btn_add"
+        app:layout_constraintTop_toBottomOf="@id/user_data_fragment_et_description"
+        app:layout_constraintStart_toEndOf="@id/guide_line_start"
+        app:layout_constraintEnd_toStartOf="@id/guide_line_end"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:textSize="@dimen/txt_15sp"
+        android:elevation="2dp"
+        android:textColor="@color/colorBlueBold"
+        android:background="@color/colorGold"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_percent=".95"
+        android:id="@+id/guide_line_end"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
