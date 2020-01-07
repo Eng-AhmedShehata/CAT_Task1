@@ -17,7 +17,6 @@ public class User {
     @ColumnInfo(name = "description")
     private String description;
 
-
     public int getId() {
         return id;
     }
