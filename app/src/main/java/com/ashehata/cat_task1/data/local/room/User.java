@@ -9,20 +9,20 @@ public class User {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    public int id;
+    private int id;
 
     @ColumnInfo(name = "title")
-    public String title;
+    private String title;
 
     @ColumnInfo(name = "description")
-    public String description;
+    private String description;
 
 
     public int getId() {
         return id;
     }
 
-    private void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
