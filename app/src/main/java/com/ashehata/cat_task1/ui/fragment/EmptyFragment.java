@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 
 import com.ashehata.cat_task1.R;
 
+// Why use this ?
 public class EmptyFragment extends Fragment {
 
 

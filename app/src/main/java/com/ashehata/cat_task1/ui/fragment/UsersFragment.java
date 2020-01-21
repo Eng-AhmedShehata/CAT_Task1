@@ -86,6 +86,7 @@ public class UsersFragment extends Fragment {
     }
 
     private void insertDummyUser() {
+        // The same problem as the one in the UserDataFragment
         Executors.newSingleThreadExecutor().execute(new Runnable() {
             @Override
             public void run() {
@@ -98,6 +99,7 @@ public class UsersFragment extends Fragment {
     }
 
     private void deleteAllUsers() {
+        // The same problem as the one in the UserDataFragment
         Executors.newSingleThreadExecutor().execute(new Runnable() {
             @Override
             public void run() {
