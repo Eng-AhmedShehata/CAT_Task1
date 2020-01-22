@@ -14,7 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ashehata.cat_task1.R;
 
 public class HelperMethod {
+    // make it a local variable, avoid global variables as you can !!
     private static LinearLayoutManager linearLayoutManager;
+    // memory leak !!
     private static NavController navController;
 
     public static void disappearKeypad(Activity activity, View v) {

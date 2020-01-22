@@ -9,8 +9,9 @@ import android.widget.Toast;
 import com.ashehata.cat_task1.R;
 
 public class CustomToast extends Toast {
-
+    // Memory leak !!
     private static TextView mText ;
+    // Memory leak !!
     private static CustomToast customToast;
 
     private CustomToast(Context context , String message, int duration ) {
