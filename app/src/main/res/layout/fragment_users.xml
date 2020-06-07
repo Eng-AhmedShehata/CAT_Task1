@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.HomeActivity">
 
+    <ProgressBar
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:max="100"
+        android:visibility="gone"
+        android:progress="45"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/users_fragment_rv_users"
         app:layout_constraintStart_toStartOf="parent"
