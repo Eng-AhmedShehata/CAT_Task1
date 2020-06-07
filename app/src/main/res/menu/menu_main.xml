@@ -7,16 +7,27 @@
     <item
         android:id="@+id/action_dummy_user"
         android:title="@string/dummy_user"
-        app:showAsAction="never"></item>
+        app:showAsAction="never"/>
 
 
     <item
         android:id="@+id/action_delete_all"
         android:title="@string/delete_all_users"
-        app:showAsAction="never"></item>
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/action_about_me"
         android:title="@string/about_me"
-        app:showAsAction="never"></item>
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/create_backup"
+        android:title="@string/create_backup"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/upload_backup"
+        android:title="@string/upload_backup"
+        app:showAsAction="never"/>
+
 </menu>

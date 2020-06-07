@@ -12,4 +12,6 @@
     <string name="insert_title">Insert a title</string>
     <string name="updated">Updated</string>
     <string name="update">Update</string>
+    <string name="create_backup">Create Backup</string>
+    <string name="upload_backup">Upload Backup</string>
 </resources>

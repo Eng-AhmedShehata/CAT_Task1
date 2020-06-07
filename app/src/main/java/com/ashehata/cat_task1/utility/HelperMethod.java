@@ -2,6 +2,7 @@ package com.ashehata.cat_task1.utility;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
@@ -12,6 +13,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ashehata.cat_task1.R;
+import com.ashehata.cat_task1.data.local.room.AppDatabase;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class HelperMethod {
     // make it a local variable, avoid global variables as you can !!
@@ -54,4 +62,5 @@ public class HelperMethod {
         navController = Navigation.findNavController(activity, R.id.navi_host_fragment);
         return navController ;
     }
+
 }
